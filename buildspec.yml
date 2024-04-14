@@ -20,7 +20,7 @@ phases:
       - echo test
       - echo "$DOCKER_REGISTRY_URL"
       - echo "$DOCKER_REGISTRY_USERNAME"
-      - docker build -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest" .
+      - docker build -t "https://hub.docker.com/biloocabba/simple-python-flask-app:latest" .
       - docker push "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest"
   post_build:
     commands:
