@@ -16,8 +16,8 @@ phases:
   build:
     commands:
       - echo "Building Docker image..."
-      - sudo docker login
-      - echo sudo docker login
+      - docker login
+      - echo docker login
       - echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL"
       - echo test_new
       - echo "$DOCKER_REGISTRY_URL"
