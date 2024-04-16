@@ -24,7 +24,7 @@ phases:
       # - echo "$DOCKER_REGISTRY_USERNAME"
       # - docker build -t "https://hub.docker.com/biloocabba/simple-python-flask-app:latest" .
       # - docker push "https://hub.docker.com/biloocabba/simple-python-flask-app:latest"
-      - docker tag demo:latest 850706444982.dkr.ecr.eu-central-1.amazonaws.com/simple-python-flask-app:latest
+      - docker tag simple-python-flask-app:latest 850706444982.dkr.ecr.eu-central-1.amazonaws.com/simple-python-flask-app:latest
       - docker push 850706444982.dkr.ecr.eu-central-1.amazonaws.com/simple-python-flask-app:latest
   post_build:
     commands:
