@@ -25,8 +25,8 @@ phases:
       # - docker build -t "https://hub.docker.com/biloocabba/simple-python-flask-app:latest" .
       # - docker push "https://hub.docker.com/biloocabba/simple-python-flask-app:latest"
       - docker build -t simple-python-flask-app .
-      - docker tag simple-python-flask-app:latest 850706444982.dkr.ecr.eu-central-1.amazonaws.com/simple-python-flask-app:latest
-      - docker push 850706444982.dkr.ecr.eu-central-1.amazonaws.com/simple-python-flask-app:latest
+      - docker tag simple-python-flask-app:latest public.ecr.aws/b7v4c2u6/simple-python-flask-app:latest
+      - docker push public.ecr.aws/b7v4c2u6/simple-python-flask-app:latest
   post_build:
     commands:
       - echo "Build completed successfully!"
